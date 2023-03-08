@@ -12,9 +12,11 @@ const { data } = await useAsyncData(`content-${path}`, () => {
         Watch me work, watch me try to be a good manager.
       </a></h3>
       <nav>
-        <NuxtLink to="/vision-statement">
-          Vision Statement
-        </NuxtLink>
+        <ul>
+          <li class="nav-button">
+            <NuxtLink to="/vision-statement" > Vision Statement </NuxtLink>
+          </li>
+        </ul>
       </nav>
     </header>
     <div class="blog-post-list">
@@ -31,3 +33,31 @@ const { data } = await useAsyncData(`content-${path}`, () => {
     </div>
   </main>
 </template>
+<style>
+  a {
+    color: black;
+    text-decoration: none;
+  }
+  a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  a:hover {
+    color: black;
+    text-decoration: none;
+  }
+  h1 {
+    margin-bottom:0;
+  }
+  h3 {
+    margin-top: 0;
+    font-size: smaller;
+  }
+  .nav-button {
+    background: gray;
+    border: 3px solid black;
+    list-style: none;
+    text-align: center;
+    width: 120px;
+  }
+</style>
