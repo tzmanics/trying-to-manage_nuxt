@@ -1,3 +1,9 @@
+<script setup>
+const { path } = useRoute()
+const { data } = await useAsyncData(`content-${path}`, () => {
+  return queryContent().find()
+})
+</script>
 <template>
   <main>
     <header>
@@ -11,5 +17,17 @@
         </NuxtLink>
       </nav>
     </header>
+    <div class="blog-post-list">
+      <ul class="post-list">
+        <li v-for="post in data" :key="post.title">
+          <NuxtLink :to="post._path">
+            <div class="post-card">
+              <h2 class="post-title">{{ post.title }}</h2>
+              <p class="post-description"> {{ post.description}}</p>
+            </div>
+          </NuxtLink>
+        </li>
+      </ul>
+    </div>
   </main>
 </template>
