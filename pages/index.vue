@@ -33,7 +33,7 @@ const { data } = await useAsyncData(`content-${path}`, () => {
     </div>
   </main>
 </template>
-<style>
+<style scoped>
   a {
     color: black;
     text-decoration: none;
@@ -43,21 +43,45 @@ const { data } = await useAsyncData(`content-${path}`, () => {
     text-decoration: none;
   }
   a:hover {
-    color: black;
+    color: gray;
     text-decoration: none;
   }
   h1 {
-    margin-bottom:0;
+    margin: 0;
   }
   h3 {
     margin-top: 0;
     font-size: smaller;
   }
+  header {
+    display: inline-block;
+    width: 90%;
+  }
+  ul {
+    padding: 0;
+  }
+  .logo {
+    min-width: 300px;
+    width: 40%;
+  }
   .nav-button {
-    background: gray;
-    border: 3px solid black;
+    background: lightgray;
+    border: 2px solid black;
+    box-shadow: 10px 5px 5px gray;
     list-style: none;
+    padding: 8px;
     text-align: center;
     width: 120px;
+  }
+  .post-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+  }
+  .post-card {
+    box-shadow: 10px 5px 10px gray;
+    margin-bottom: 40px;
+    padding: 10px;
+    min-width: 120px;
   }
 </style>
