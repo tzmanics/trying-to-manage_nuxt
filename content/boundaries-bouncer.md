@@ -1,13 +1,13 @@
 ---
 title: 'Boundaries Bouncer'
-description: 'For so many reasons your team needs boundaries, and you gots to be the bouncer.'
+description: 'For so many reasons, your team needs boundaries and you gots to be the bouncer.'
 date: 2022-06-22
 tags: [managing, leadership, people]
 ---
 
 # Boundaries Bouncer
 
-_For so many reasons your team needs boundaries, and you gots to be the one to set them._
+_For so many reasons, your team needs boundaries and you gots to be the one to set them._
 
 ---
 
